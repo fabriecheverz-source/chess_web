@@ -19,9 +19,9 @@
         </nav>
     </header>
     <main>
-        <header>
+        <section>
             <h1>
-            Reglas del Ajedrez
+                Reglas del Ajedrez
             </h1>
             <p>
                 En el ajedrez se sigue una amplia cantidad de reglas que abarcan desde el posicionamiento inicial de las piezas de acuerdo a los colores del tablero, hasta distintas resoluciones y jugadas especiales que solo pueden ocurrir cuando se cumplen ciertas condiciones.
@@ -29,9 +29,142 @@
             <p>
                 En esta sección vas a poder apreciar las reglas básicas que se requiere saber para jugar al ajedrez.
             </p>
-        </header>
+        </section>
         <section>
-
+            <h2>
+                Reglas básicas
+            </h2>
+             <ul>
+                <li>Las piezas blancas realizan el primer movimiento de la partida.</li>
+                <li>Los jugadores se turnan para mover una sola pieza por vez.</li>
+                <li>No es posible mover una pieza a una casilla ocupada por otra pieza del mismo color.</li>
+                <li>Si una pieza termina su movimiento en una casilla ocupada por una pieza rival, esta es capturada y se retira del tablero.</li>
+                <li>El rey no puede moverse a una casilla atacada por una pieza enemiga.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Jaque y jaque mate
+            </h2>
+            <article>
+                <h3>
+                    Jaque
+                </h3>
+                <p>
+                    Cuando el rey de un jugador está bajo amenaza de captura, se dice que está en jaque. El jugador debe realizar un movimiento que elimine la amenaza de jaque en su próximo turno.
+                </p>
+                <p>
+                    Existen tres formas de salir del jaque:
+                </p>
+                <ul>
+                    <li>Mover el rey a una casilla segura.</li>
+                    <li>Capturar la pieza que está dando jaque.</li>
+                    <li>Colocar una pieza entre el rey y la pieza que da jaque.</li>
+                </ul>
+                <img src="../img/jaque.gif" alt="Imagen de un jaque">
+                <p>
+                    En esa imagen se puede observar un jaque dado por el alfil blanco al rey negro. En esa posición el rey negro puede salir del jaque de cualquiera de las 3 formas mencionadas (capturar al alfil blanco con la torre negra, mover el rey a una casilla segura  o poner al alfil negro en el camino).
+                </p>
+            </article>
+            <article>
+                <h3>
+                    Jaque mate
+                </h3>
+                <p>
+                    El jaque mate sucede cuando el rey está en jaque y ninguna de las opciones anteriores es posible. En ese momento la partida termina y gana el jugador que dio el jaque mate.
+                </p>
+                <img src="../img/jaque-mate.jpg" alt="Imagen de un jaque mate">
+                <p>
+                    En esa imagen se puede observar un jaque mate dado por la torre blanca al rey negro. En esa posición el rey negro no puede salir del jaque, por lo tanto, es jaque mate.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>
+                Jugadas especiales
+            </h2>
+            <h3>
+                Enroque
+            </h3>
+            <p>
+                El enroque es una jugada especial que permite al rey moverse dos casillas hacia la torre y, a su vez, la torre se mueve a la casilla que queda al lado del rey.
+            </p>
+            <p>
+                Para realizar un enroque, se deben cumplir las siguientes condiciones:
+            </p>
+            <ul>
+                <li>El rey y la torre involucradas no se han movido anteriormente en la partida.</li>
+                <li>Las casillas entre el rey y la torre deben estar despejadas.</li>
+                <li>El rey no debe estar en jaque.</li>
+                <li>El rey no debe pasar por una casilla atacada por una pieza enemiga ni terminar en una casilla atacada.</li>
+            </ul>
+            <p>
+                Existen 2 tipos de enroque: el enroque corto (o enroque del lado del rey) y el enroque largo (o enroque del lado de la dama). En el enroque corto, el rey se mueve dos casillas hacia la torre del lado del rey, y la torre se coloca al lado del rey. En el enroque largo, el rey se mueve dos casillas hacia la torre del lado de la dama, y la torre se coloca al lado del rey.
+            </p>
+            <img src="../img/enroque.jpg" alt="Imagen de un enroque">
+            <p>
+                En esa imagen se puede observar una posición inicial y como queda el tablero después de realizar ambos tipos de enroque.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Captura al paso
+            </h3>
+            <p>
+                La captura al paso es una jugada especial que permite a un peón capturar a otro peón que ha avanzado dos casillas desde su posición inicial, pasando por una casilla que podría haber sido capturada por el peón del jugador contrario. Esta captura solo puede realizarse en el turno inmediatamente después de que el peón rival haya avanzado dos casillas.
+            </p>
+            <img src="../img/captura-al-paso.JPG" alt="Imagen de una captura al paso">
+            <p>
+                En esa imagen se puede observar como se produce y se reealiza una captura al paso.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Coronación
+            </h3>
+            <p>
+                La coronación es una jugada especial que ocurre cuando un peón alcanza la última fila del tablero. En ese momento, el jugador puede reemplazar el peón por cualquier otra pieza (excepto el rey), generalmente se elige una dama debido a su poder y versatilidad.
+            </p>
+            <div class="row">
+                <img src="../img/coronación.jpg" alt="Imagen de una coronación">
+                <img src="../img/coronación2.jpg" alt="Imagen de una coronación">
+            </div>
+            <p>
+                En esas imagenes se puede observar un ejemplo de coronación, en la primera imagen se puede ver como el peón blanco llega a la última fila y en la segunda imagen se puede ver como el peón blanco es reemplazado por una dama blanca.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Jugadas ilegales
+            </h2>
+            <p>
+                Una jugada ilegal es cualquier movimiento que no cumple con las reglas del ajedrez. Si un jugador realiza una jugada ilegal, el árbitro puede permitir que el jugador corrija su movimiento o puede imponer una penalización, dependiendo de las reglas del torneo o del acuerdo entre los jugadores.
+            </p>
+            <p>
+                Algunos ejemplos de jugadas ilegales incluyen mover una pieza a una casilla ocupada por otra pieza del mismo color, mover el rey a una casilla atacada por una pieza enemiga, o realizar un enroque cuando no se cumplen las condiciones necesarias.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Tablas
+            </h2>
+            <p>
+                Una partida de ajedrez puede terminar en tablas, lo que significa que ninguno de los jugadores gana. Esto puede ocurrir por varias razones, como un acuerdo mutuo entre los jugadores, la falta de material suficiente para dar jaque mate, o la repetición de movimientos.
+            </p>
+            <p>
+                Algunas situaciones que pueden llevar a un empate incluyen:
+            </p>
+            <ul>
+                <li>Regla de triple repetición: Si la misma posición se repite tres veces con el mismo jugador teniendo el turno, cualquiera de los jugadores puede reclamar tablas.</li>
+                <li>Regla de los cincuenta movimientos: Si durante cincuenta movimientos consecutivos no se ha movido ningún peón ni se ha capturado ninguna pieza, cualquiera de los jugadores puede reclamar tablas.</li>
+                <li>Insuficiencia de material: Si ninguno de los jugadores tiene suficiente material para dar jaque mate, la partida termina en tablas.</li>
+            </ul>
+            <p>
+                Un ejemplo de insuficiencia de material es cuando ambos jugadores solo tienen sus reyes en el tablero, lo que hace imposible dar jaque mate.
+            </p>
+            <p>
+                En resumen, las tablas son una parte importante del ajedrez y pueden ocurrir por diversas razones, reflejando la complejidad y la estrategia del juego.
+            </p>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

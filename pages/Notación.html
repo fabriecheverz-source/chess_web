@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="../img/portada.jpg">
+        <nav>
+            <ul>
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="./Piezas.html">Piezas</a></li>
+                <li> <a href="./Reglas.html">Reglas</a></li>
+                <li> <a href="#">Notación</a></li>
+                <li> <a href="./Historia.html">Historia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>
+                Notación
+            </h1>
+            <p>
+                La notación en ajedrez es un sistema utilizado para registrar y describir los movimientos de las piezas durante una partida. Permite a los jugadores y espectadores seguir la partida de manera clara y precisa, facilitando el análisis y estudio de las partidas.
+            <p>
+                En esta sección vas a poder aprender sobre la notación algebraica, que es el sistema de notación más utilizado para registrar y describir los movimientos en una partida de ajedrez.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Notación algebraica
+            </h2>
+            <p>
+                La notación algebraica utiliza letras y números para identificar las casillas del tablero. Las columnas se etiquetan con letras de la 'a' a la 'h' (o sea, de la primera a la octava letra del alfabeto), mientras que las filas se numeran del 1 al 8. Cada casilla se identifica combinando la letra de la columna con el número de la fila correspondiente.
+            </p>
+            <img src="../img/nombre-de-casillas-tablero-ajedrez.gif" alt="Nombre de las casillas del tablero de ajedrez">
+            <p>
+                Por ejemplo, la casilla en la columna 'e' y la fila '4' se denomina "e4". De esta manera, cada movimiento de una pieza se puede registrar de forma precisa y concisa.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Movimientos de las piezas
+            </h2>
+            <p>
+                Los movimientos de las piezas se anotan utilizando la letra inicial de la pieza (excepto para los peones, que no llevan letra) seguida de la casilla a la que se mueve. Por ejemplo, "Nf3" indica que un caballo se mueve a la casilla f3, mientras que "e4" indica que un peón se mueve a la casilla e4. Tambien se pueden indicar capturas, jaques y jaque mate utilizando símbolos específicos. Por ejemplo, "Nxe5" indica que un caballo captura una pieza en la casilla e5, mientras que "Qh5+" indica que la dama se mueve a la casilla h5 dando jaque al rey enemigo.
+            </p>
+            <p>
+                Las piezas se representan de la siguiente manera:
+            </p>
+            <div class="container my-5 table-responsive">
+                <table class="table table-striped table-bordered table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Pieza</th>
+                            <th>Notación</th>
+                            <th>Ejemplo de uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rey</td>
+                            <td>K</td>
+                            <td>Kf3</td>
+                        </tr>
+                        <tr>
+                            <td>Dama</td>
+                            <td>Q</td>
+                            <td>Qh5+</td>   
+                        </tr>
+                        <tr>
+                            <td>Torre</td>
+                            <td>R</td>
+                            <td>Ra5</td>
+                        </tr>
+                        <tr>
+                            <td>Alfil</td>
+                            <td>B</td>
+                            <td>Bc4</td>    
+                        </tr>
+                        <tr>
+                            <td>Caballo</td>
+                            <td>N</td>
+                            <td>Nf3</td>
+                        </tr>
+                        <tr>
+                            <td>Peón</td>
+                            <td>(sin letra)</td>
+                            <td>e4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                Mientras que los símbolos utilizados para indicar capturas, jaques y jaque mate son los siguientes:
+            </p>
+            <div class="container my-5 table-responsive">
+                <table class="table table-striped table-bordered table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Acción</th>
+                            <th>Símbolo</th>
+                            <th>Ejemplo de uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Captura</td>
+                            <td>x</td>
+                            <td>Nxe5</td>
+                        </tr>
+                        <tr>
+                            <td>Jaque</td>
+                            <td>+</td>
+                            <td>Qh5+</td>   
+                        </tr>
+                        <tr>
+                            <td>Jaque mate</td>
+                            <td>#</td>
+                            <td>Qh5#</td>
+                        </tr>
+                        <tr>
+                            <td>Coronación</td>
+                            <td>=</td>
+                            <td>exd8=Q</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                También existen otras notaciones especiales para indicar movimientos como el enroque, que se representa con "O-O" para el enroque corto y "O-O-O" para el enroque largo.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Ejemplo de partida
+            </h2>
+            <p>
+                A continuación, se muestra un ejemplo de una partida de ajedrez utilizando la notación algebraica:
+            </p>
+            <pre>
+                Las jugadas se registran de la siguiente manera:
+                1. e4 e5        
+                2. Nf3 Nc6
+                3. Bb5 a6
+                4. Ba4 Nf6
+                5. O-O Be7
+            </pre>
+            <pre>
+                Las jugadas se leen de la siguiente manera:
+                1. e4 e5: El jugador de blancas mueve su peón a e4 y el jugador de negras mueve su peón a e5.
+                2. Nf3 Nc6: El jugador de blancas mueve su caballo a f3 y el jugador de negras mueve su caballo a c6.
+                3. Bb5 a6: El jugador de blancas mueve su alfil a b5 y el jugador de negras mueve su peón a a6.
+                4. Ba4 Nf6: El jugador de blancas mueve su alfil a a4 y el jugador de negras mueve su caballo a f6.
+                5. O-O Be7: El jugador de blancas realiza un enroque corto y el jugador de negras mueve su alfil a e7.
+            </pre>
+    </main>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+</body>
+</html>

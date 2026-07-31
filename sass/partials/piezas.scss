@@ -1,0 +1,44 @@
+@use "./variables.scss" as*;
+@use "./mixins.scss" as*;
+.seccion2p{
+    @include flex-row;
+    p {
+        flex: 1;
+    }
+    img {
+       @include img-style(40%, 300px);
+    }
+}        
+.col-12{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.card{
+     @extend %card-style;
+    transition: 0.5s;
+    align-items: center;
+    border-color: black;
+    &:hover{
+        transform: translateY(-12px);
+    }
+    div{
+        background-color: black;
+    }
+    img{
+        width: fit-content;
+        height: 300px;
+    }
+}    
+table{
+    border-radius:$radius-md;
+    overflow:hidden;
+}
+thead{
+    background:$color-primary;
+    color:white;
+}
+tbody{
+    tr:nth-child(even){
+        background:#f4ede4;
+    }
+}

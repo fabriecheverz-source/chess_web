@@ -1,1 +1,56 @@
 @use "./variables.scss" as*;
+@use "./mixins.scss" as*;
+main {
+    width: 80%;
+    margin: 4rem auto;
+    section{
+        @extend %panel;
+         margin-bottom: 5rem;
+        h1 {
+            color: $color-primary;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+
+            color: $color-secondary;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid $color-primary;
+            padding-left: 1rem;
+            &:before {
+                content: "♟";
+                color: $color-primary;
+                margin-right: .5rem;
+            }
+        }
+        p {
+            color: orange;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    }
+}
+section:first-of-type{
+        text-align: center;
+        p {
+            width: 75%;
+            margin: auto;
+        }
+    }
+    .seccion2i{
+        @include flex-row;
+        p {
+            flex: 1;
+        }
+        img {
+           @include img-style(40%, 300px);
+        }
+    }
+    .seccion3i{
+        text-align: center;
+        p {
+            width: 75%;
+            margin: auto;
+        }
+    }

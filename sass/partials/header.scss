@@ -1,5 +1,5 @@
 @use "./variables.scss" as*;
-*{
+*::before, :after{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -13,6 +13,9 @@ header {
     width: 100%;
     background-color: $color-background;
     nav {
+        position:sticky;
+        top: 0px;
+        z-index: 100;
         background-color: $color-primary;
         padding: 1rem 2rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -40,19 +43,13 @@ header {
     }
     img {
         display: block;
-        width: 75%;
-        height: 600px;
+        width: 50%;
+        height: 400px;
         margin: auto;
         object-fit: cover;
         transition: 0.3s;
         &:hover {
             transform: scale(1.02);
         }
-    }
-}
-header{
-    img{
-    }
-    nav{
     }
 }

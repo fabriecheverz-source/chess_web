@@ -1,4 +1,5 @@
-* {
+@charset "UTF-8";
+*::before, :after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,6 +16,9 @@ header {
   background-color: #F5F5DC;
 }
 header nav {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
   background-color: #5C4033;
   padding: 1rem 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -40,14 +44,144 @@ header nav ul li a:hover {
 }
 header img {
   display: block;
-  width: 75%;
-  height: 600px;
+  width: 50%;
+  height: 400px;
   margin: auto;
   object-fit: cover;
   transition: 0.3s;
 }
 header img:hover {
   transform: scale(1.02);
+}
+
+main section {
+  background-color: #2b2b2b;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-top: 5px;
+}
+
+main {
+  width: 80%;
+  margin: 4rem auto;
+}
+main section {
+  margin-bottom: 5rem;
+}
+main section h1 {
+  color: #5C4033;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+main section h2 {
+  color: #8B5E3C;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #5C4033;
+  padding-left: 1rem;
+}
+main section h2:before {
+  content: "♟";
+  color: #5C4033;
+  margin-right: 0.5rem;
+}
+main section p {
+  color: orange;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+section:first-of-type {
+  text-align: center;
+}
+section:first-of-type p {
+  width: 75%;
+  margin: auto;
+}
+
+.seccion2i {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.seccion2i p {
+  flex: 1;
+}
+.seccion2i img {
+  width: 40%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
+}
+
+.seccion3i {
+  text-align: center;
+}
+.seccion3i p {
+  width: 75%;
+  margin: auto;
+}
+
+.seccion2p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.seccion2p p {
+  flex: 1;
+}
+.seccion2p img {
+  width: 40%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
+}
+
+.col-12 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.card {
+  transition: 0.5s;
+  align-items: center;
+  border-color: black;
+}
+.card:hover {
+  transform: translateY(-12px);
+}
+.card div {
+  background-color: black;
+}
+.card img {
+  width: fit-content;
+  height: 300px;
+}
+
+table {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+thead {
+  background: #5C4033;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #f4ede4;
 }
 
 /*# sourceMappingURL=style.css.map */

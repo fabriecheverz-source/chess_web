@@ -1,0 +1,33 @@
+@use "./variables.scss" as*;
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+@mixin img-style($width, $height){
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    border-radius: $radius-md;
+    border: 3px solid $color-primary;
+}
+%panel {
+    background-color: #2b2b2b;
+    padding: 2rem;
+    border-radius: $radius-md;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+
+}
+%card-style{
+    height: 100%;
+    border-radius:$radius-lg;
+    overflow:hidden;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+    border-top: 5px;
+}

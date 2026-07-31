@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="../img/portada.jpg">
+    <header>    
         <nav>
             <ul>
                 <li> <a href="../index.html">Inicio</a></li>
@@ -19,6 +18,7 @@
                 <li> <a href="./Historia.html">Historia</a></li>
             </ul>
         </nav>
+         <img src="../img/portada.jpg">
     </header>
     <main>
         <section>
@@ -29,14 +29,16 @@
                 En está sección vas a poder leer que piezas existen en el ajedrez, como funcionan, y cual es su valor en la partida.
             </p>
         </section>
-        <section>
-            <h2>
-                El tablero y la posición inicial
-            </h2>
-            <p>
-                El ajedrez se juega sobre un tablero de 64 casillas, distribuidas en 8 filas y 8 columnas, con colores claros y oscuros alternados. Al comenzar la partida, cada jugador dispone de 16 piezas: un rey, una dama, dos torres, dos alfiles, dos caballos y ocho peones.
-                Las piezas se colocan en las dos filas más cercanas a cada jugador. En la primera fila, el orden de izquierda a derecha es: torre, caballo, alfil, dama, rey, alfil, caballo y torre. La dama siempre comienza en una casilla de su mismo color y el rey ocupa la casilla restante. Los ocho peones se ubican delante de las piezas principales, formando la segunda fila.
-            </p>
+        <section class="seccion2p">
+            <article>
+                <h2>
+                    El tablero y la posición inicial
+                </h2>
+                <p>
+                    El ajedrez se juega sobre un tablero de 64 casillas, distribuidas en 8 filas y 8 columnas, con colores claros y oscuros alternados. Al comenzar la partida, cada jugador dispone de 16 piezas: un rey, una dama, dos torres, dos alfiles, dos caballos y ocho peones.
+                    Las piezas se colocan en las dos filas más cercanas a cada jugador. En la primera fila, el orden de izquierda a derecha es: torre, caballo, alfil, dama, rey, alfil, caballo y torre. La dama siempre comienza en una casilla de su mismo color y el rey ocupa la casilla restante. Los ocho peones se ubican delante de las piezas principales, formando la segunda fila.
+                </p>
+            </article class="tablero">    
             <img src="../img/Tablero.jpg">
         </section>
         <section class="container">
@@ -45,7 +47,7 @@
             </h2>
             <div class="row">
                 <article class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <div class="card peon">
                         <img src="../img/Peon.jpg" class="card-img-top" alt="El peon">
                         <div class="card-body">
                             <h3 class="card-title">El peon</h3>
@@ -54,7 +56,7 @@
                     </div>
                 </article>
                  <article class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <div class="card caballo">
                         <img src="../img/caballo.jpg" class="card-img-top" alt="El Caballo">
                         <div class="card-body">
                             <h3 class="card-title">El caballo</h3>
@@ -62,8 +64,8 @@
                         </div>
                     </div>
                 </article>
-                 <article class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card alfil">
                         <img src="../img/alfil.jpg" class="card-img-top" alt="El Alfil">
                         <div class="card-body">
                             <h3 class="card-title">El alfil</h3>
@@ -72,7 +74,7 @@
                     </div>
                 </article>
                    <article class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <div class="card torre">
                         <img src="../img/torre.jpg" class="card-img-top" alt="La torre">
                         <div class="card-body">
                             <h3 class="card-title">La torre</h3>
@@ -80,8 +82,8 @@
                         </div>
                     </div>
                 </article>
-                 <article class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card dama">
                         <img src="../img/dama.jpg" class="card-img-top" alt="La dama">
                         <div class="card-body">
                             <h3 class="card-title">La dama</h3>
@@ -89,8 +91,8 @@
                         </div>
                     </div>
                 </article>
-                 <article class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card rey">
                         <img src="../img/rey.jpg" class="card-img-top" alt="El rey">
                         <div class="card-body">
                             <h3 class="card-title">El rey</h3>

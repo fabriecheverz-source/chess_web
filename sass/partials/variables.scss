@@ -1,0 +1,37 @@
+// ===== COLORES =====
+
+// Colores principales
+$color-primary: #5C4033;      // Marrón oscuro
+$color-secondary: #8B5E3C;    // Marrón medio
+$color-accent: #D2B48C;       // Beige
+// Fondo
+$color-background:#F5F5DC;   // Beige muy claro
+$color-surface: #FFFFFF;      // Blanco
+
+// Texto
+$color-text: #2B2B2B;         // Gris muy oscuro
+$color-text-light: #FFFFFF;   // Blanco
+
+// Bordes
+$color-border: #C2A27A;
+
+// Estados
+$color-success: #4CAF50;
+$color-warning: #FFC107;
+$color-danger: #D32F2F;
+// ===== TIPOGRAFÍAS =====
+
+$font-title: "Merriweather", serif;
+$font-text: "Roboto", sans-serif;
+// ===== TAMAÑOS =====
+
+$fs-title: 3rem;
+$fs-subtitle: 2rem;
+$fs-section: 1.6rem;
+$fs-text: 1rem;
+$fs-small: .9rem;
+// ===== BORDES =====
+
+$radius-sm: 8px;
+$radius-md: 15px;
+$radius-lg: 25px;

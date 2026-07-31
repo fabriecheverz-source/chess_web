@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -35,7 +35,7 @@
             </h2>
             <p>
                 El ajedrez se juega sobre un tablero de 64 casillas, distribuidas en 8 filas y 8 columnas, con colores claros y oscuros alternados. Al comenzar la partida, cada jugador dispone de 16 piezas: un rey, una dama, dos torres, dos alfiles, dos caballos y ocho peones.
-Las piezas se colocan en las dos filas más cercanas a cada jugador. En la primera fila, el orden de izquierda a derecha es: torre, caballo, alfil, dama, rey, alfil, caballo y torre. La dama siempre comienza en una casilla de su mismo color y el rey ocupa la casilla restante. Los ocho peones se ubican delante de las piezas principales, formando la segunda fila.
+                Las piezas se colocan en las dos filas más cercanas a cada jugador. En la primera fila, el orden de izquierda a derecha es: torre, caballo, alfil, dama, rey, alfil, caballo y torre. La dama siempre comienza en una casilla de su mismo color y el rey ocupa la casilla restante. Los ocho peones se ubican delante de las piezas principales, formando la segunda fila.
             </p>
             <img src="../img/Tablero.jpg">
         </section>
@@ -101,72 +101,70 @@ Las piezas se colocan en las dos filas más cercanas a cada jugador. En la prime
             </div>
         </section>
         <section class="container my-5">
+            <h2 class="text-center mb-4">Resumen de las piezas</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover align-middle">
 
-    <h2 class="text-center mb-4">Resumen de las piezas</h2>
-    <div class="table-responsive">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Pieza</th>
+                            <th>Cantidad</th>
+                            <th>Movimiento</th>
+                            <th>Valor aproximado</th>
+                        </tr>
+                    </thead>
 
-        <table class="table table-striped table-bordered table-hover align-middle">
+                    <tbody>
 
-            <thead class="table-dark">
-                <tr>
-                    <th>Pieza</th>
-                    <th>Cantidad</th>
-                    <th>Movimiento</th>
-                    <th>Valor aproximado</th>
-                </tr>
-            </thead>
+                        <tr>
+                            <td>♔ Rey</td>
+                            <td>1</td>
+                            <td>Una casilla en cualquier dirección.</td>
+                            <td>Invaluable</td>
+                        </tr>
 
-            <tbody>
+                        <tr>
+                            <td>♕ Dama</td>
+                            <td>1</td>
+                            <td>Horizontal, vertical y diagonal.</td>
+                            <td>9 puntos</td>
+                        </tr>
 
-                <tr>
-                    <td>♔ Rey</td>
-                    <td>1</td>
-                    <td>Una casilla en cualquier dirección.</td>
-                    <td>Invaluable</td>
-                </tr>
+                        <tr>
+                            <td>♖ Torre</td>
+                            <td>2</td>
+                            <td>Horizontal y vertical.</td>
+                            <td>5 puntos</td>
+                        </tr>
 
-                <tr>
-                    <td>♕ Dama</td>
-                    <td>1</td>
-                    <td>Horizontal, vertical y diagonal.</td>
-                    <td>9 puntos</td>
-                </tr>
+                        <tr>
+                            <td>♗ Alfil</td>
+                            <td>2</td>
+                            <td>Diagonal.</td>
+                            <td>3 puntos</td>
+                        </tr>
 
-                <tr>
-                    <td>♖ Torre</td>
-                    <td>2</td>
-                    <td>Horizontal y vertical.</td>
-                    <td>5 puntos</td>
-                </tr>
+                        <tr>
+                            <td>♘ Caballo</td>
+                            <td>2</td>
+                            <td>En forma de "L".</td>
+                            <td>3 puntos</td>
+                        </tr>
 
-                <tr>
-                    <td>♗ Alfil</td>
-                    <td>2</td>
-                    <td>Diagonal.</td>
-                    <td>3 puntos</td>
-                </tr>
+                        <tr>
+                            <td>♙ Peón</td>
+                            <td>8</td>
+                            <td>Avanza hacia adelante y captura en diagonal.</td>
+                            <td>1 punto</td>
+                        </tr>
 
-                <tr>
-                    <td>♘ Caballo</td>
-                    <td>2</td>
-                    <td>En forma de "L".</td>
-                    <td>3 puntos</td>
-                </tr>
+                    </tbody>
 
-                <tr>
-                    <td>♙ Peón</td>
-                    <td>8</td>
-                    <td>Avanza hacia adelante y captura en diagonal.</td>
-                    <td>1 punto</td>
-                </tr>
+                </table>
 
-            </tbody>
+            </div>
 
-        </table>
-
-    </div>
-
-</section>
+        </section>
     </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
 </body>

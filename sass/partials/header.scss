@@ -1,0 +1,58 @@
+@use "./variables.scss" as*;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:$color-background;
+    color:$color-text;
+    font-family:$font-text;
+}
+header {
+    width: 100%;
+    background-color: $color-background;
+    nav {
+        background-color: $color-primary;
+        padding: 1rem 2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            li {
+                a {
+                    color: $color-text-light;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    font-family: $font-text;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $color-accent;
+                    }
+                }
+            }
+        }
+    }
+    img {
+        display: block;
+        width: 75%;
+        height: 600px;
+        margin: auto;
+        object-fit: cover;
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+header{
+    img{
+    }
+    nav{
+    }
+}

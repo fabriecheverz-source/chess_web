@@ -1,0 +1,29 @@
+@use "./variables.scss" as*;
+@use "./mixins.scss" as*;
+section{
+        li{
+            text-size-adjust: 120%;
+            color: rgba(245, 245, 220, 0.644);
+        }
+}
+.jaque{
+    @include flex-row;
+    div{
+        width: 50%;
+    }
+}
+.divj2{
+    @include flex-row;
+    img{
+        @include img-style(40%, 300px)
+    }
+}
+.enroqueimg, .passantimg{
+    @include flex-center
+}
+.coronacion{
+    justify-content: space-evenly;
+    img{
+        @include img-style(40%, auto);
+    };
+}

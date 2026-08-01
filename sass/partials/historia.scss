@@ -1,0 +1,8 @@
+@use "./variables.scss" as*;
+@use "./mixins.scss" as*;
+.historiadiv{
+    @include flex-center;
+    img{
+        @include img-style(50%, auto);
+    }
+}

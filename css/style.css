@@ -15,33 +15,6 @@ header {
   width: 100%;
   background-color: #F5F5DC;
 }
-header nav {
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-  background-color: #5C4033;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-header nav ul li a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-family: "Roboto", sans-serif;
-  transition: 0.3s;
-}
-header nav ul li a:hover {
-  color: #D2B48C;
-}
 header img {
   display: block;
   width: 50%;
@@ -54,7 +27,35 @@ header img:hover {
   transform: scale(1.02);
 }
 
-main section {
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: #5C4033;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #D2B48C;
+}
+
+section {
   background-color: #2b2b2b;
   padding: 2rem;
   border-radius: 15px;
@@ -73,27 +74,36 @@ main {
   width: 80%;
   margin: 4rem auto;
 }
-main section {
+
+section {
   margin-bottom: 5rem;
 }
-main section h1 {
+
+h1 {
   color: #5C4033;
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
-main section h2 {
+
+h2 {
   color: #8B5E3C;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   border-left: 6px solid #5C4033;
   padding-left: 1rem;
 }
-main section h2:before {
+h2:before {
   content: "♟";
   color: #5C4033;
   margin-right: 0.5rem;
 }
-main section p {
+
+h3 {
+  color: #D2B48C;
+  font-size: 2.5rem;
+}
+
+p {
   color: orange;
   font-size: 1.1rem;
   line-height: 1.8;
@@ -182,6 +192,82 @@ thead {
 
 tbody tr:nth-child(even) {
   background: #f4ede4;
+}
+
+section li {
+  text-size-adjust: 120%;
+  color: rgba(245, 245, 220, 0.644);
+}
+
+.jaque {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.jaque div {
+  width: 50%;
+}
+
+.divj2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.divj2 img {
+  width: 40%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
+}
+
+.enroqueimg, .passantimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coronacion {
+  justify-content: space-evenly;
+}
+.coronacion img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
+}
+
+.notaciondiv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notaciondiv1 img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
+}
+
+pre {
+  color: #D2B48C;
+}
+
+.historiadiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.historiadiv img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 @use "./variables.scss" as*;
 @use "./mixins.scss" as*;
-.notaciondiv1{
+.casillas-tablero{
     @include flex-center;
     img{
         @include img-style(25%, auto)

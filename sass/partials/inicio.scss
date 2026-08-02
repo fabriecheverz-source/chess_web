@@ -4,9 +4,20 @@ main {
     width: 80%;
     margin: 4rem auto;
 }
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
 section{
     @extend %panel;
     margin-bottom: 5rem;
+    animation: aparecer .8s ease;
 }
 h1 {
     color: $color-primary;

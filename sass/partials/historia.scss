@@ -1,6 +1,6 @@
 @use "./variables.scss" as*;
 @use "./mixins.scss" as*;
-.historiadiv{
+.charutanga-image{
     @include flex-center;
     img{
         @include img-style(50%, auto);

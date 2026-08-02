@@ -1,0 +1,27 @@
+@use "./variables.scss" as*;
+.footer{
+    background-color: $color-primary;
+    color: $color-text-light;
+    text-align: center;
+    padding: 3rem;
+    p{
+        margin: 1.5rem;
+    }
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: $color-accent;
+    color: $color-primary;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    &:hover {
+        background-color: darken($color-accent, 10%);
+        transform: scale(1.05);
+    }
+}
+.copyright{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

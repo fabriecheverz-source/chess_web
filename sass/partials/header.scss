@@ -9,7 +9,7 @@ body{
     color:$color-text;
     font-family:$font-text;
 }
-header {
+.header {
     width: 100%;
     background-color: $color-background;
     img {
@@ -24,7 +24,7 @@ header {
         }
     }
 }
-nav {
+.nav-header {
         position:sticky;
         top: 0px;
         z-index: 100;

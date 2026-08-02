@@ -11,11 +11,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
+.header {
   width: 100%;
   background-color: #F5F5DC;
 }
-header img {
+.header img {
   display: block;
   width: 50%;
   height: 400px;
@@ -23,11 +23,11 @@ header img {
   object-fit: cover;
   transition: 0.3s;
 }
-header img:hover {
+.header img:hover {
   transform: scale(1.02);
 }
 
-nav {
+.nav-header {
   position: sticky;
   top: 0px;
   z-index: 100;
@@ -35,7 +35,7 @@ nav {
   padding: 1rem 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-nav ul {
+.nav-header ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -44,15 +44,29 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav ul li a {
+.nav-header ul li a {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
   transition: 0.3s;
 }
-nav ul li a:hover {
+.nav-header ul li a:hover {
   color: #D2B48C;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section {
+  animation: aparecer 0.8s ease;
 }
 
 section {
@@ -129,7 +143,7 @@ section:first-of-type p {
 .seccion2i img {
   width: 40%;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
 }
@@ -154,7 +168,7 @@ section:first-of-type p {
 .seccion2p img {
   width: 40%;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
 }
@@ -218,7 +232,7 @@ section li {
 .divj2 img {
   width: 40%;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
 }
@@ -235,7 +249,7 @@ section li {
 .coronacion img {
   width: 40%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
 }
@@ -248,7 +262,7 @@ section li {
 .notaciondiv1 img {
   width: 25%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
 }
@@ -265,9 +279,38 @@ pre {
 .historiadiv img {
   width: 50%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
+}
+
+.footer {
+  background-color: #5C4033;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3rem;
+}
+.footer p {
+  margin: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #D2B48C;
+  color: #5C4033;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: rgb(76.7279411765%, 61.2132352941%, 40.5269607843%);
+  transform: scale(1.05);
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */

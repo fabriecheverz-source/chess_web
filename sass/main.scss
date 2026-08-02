@@ -1,7 +1,9 @@
-@use "./partials/variables";
-@use "./partials/header";
+@use "./partials/variables.scss";
+@use "./partials/header.scss";
+@use "./partials/animacion.scss";
 @use "./partials/inicio.scss";
 @use "./partials/piezas.scss";
 @use "./partials/reglas.scss";
 @use "./partials/notacion.scss";
 @use "./partials/historia.scss";
+@use "./partials/footer.scss";

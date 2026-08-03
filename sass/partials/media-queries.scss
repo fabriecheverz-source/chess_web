@@ -1,3 +1,5 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
 /* 📱 Celulares (≤ 480px) */
 @media (max-width: 480px) {
 
@@ -23,25 +25,28 @@
   h3 { font-size: 1.4rem; }
   p  { font-size: 0.95rem; }
 
+ .jaques img, .enroque img, .passant img, .coronacion img {
+    @include img-style(70%, auto);
+ }
   /* SECCIONES CON FLEX-ROW */
   .seccion2i,
-  .seccion2p,
-  .jaque,
-  .divj2 {
+  .seccion2p {
     flex-direction: column;
     text-align: center;
   }
-
+  .div-notación-algebraica {
+    flex-direction: column;
+    text-align: center;
+  }
   .seccion2i img,
-  .seccion2p img,
-  .divj2 img {
+  .seccion2p img {
     width: 80%;
     height: auto;
     margin: auto;
   }
-
-  .jaque div {
-    width: 100%;
+  .div-tablero{
+    flex-direction: column;
+    text-align: center;
   }
 
   /* NOTACIÓN / HISTORIA */
@@ -56,7 +61,7 @@
   }
 }
 /* 📱📲 Celulares grandes y tablets verticales (≤ 768px) */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
 
   .header img {
     width: 70%;
@@ -73,14 +78,26 @@
 
   .seccion2i,
   .seccion2p,
-  .jaque,
-  .divj2 {
+  .jaque{
+    
     gap: 1.5rem;
   }
-
+  .div-tablero{
+    flex-direction: column;
+    text-align: center;
+  }
+  .div-notación-algebraica {
+    flex-direction: column;
+    text-align: center;
+    img{
+      @include img-style(40%, auto);
+    }
+  }
+  .jaques img, .enroque img, .passant img, .coronacion img {
+      @include img-style(50%, auto);
+  }
   .seccion2i img,
-  .seccion2p img,
-  .divj2 img {
+  .seccion2p img {
     width: 60%;
     height: auto;
   }
@@ -90,19 +107,24 @@
   }
 }
 /* 💻 Tablets horizontales (≤ 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
   main {
     width: 85%;
   }
-
+  .div-notación-algebraica {
+    flex-direction: column;
+    text-align: center;
+    img{
+      @include img-style(40%, auto);
+    }
+  }
   .header img {
     width: 60%;
     height: 350px;
   }
 
   .seccion2i img,
-  .seccion2p img,
-  .divj2 img {
+  .seccion2p img {
     width: 45%;
   }
 }

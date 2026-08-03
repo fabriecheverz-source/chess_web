@@ -153,17 +153,25 @@ section:first-of-type p {
   margin: auto;
 }
 
-.seccion2p {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-}
 .seccion2p p {
   flex: 1;
 }
 .seccion2p img {
   width: 40%;
+  height: 300px;
+  object-fit: fill;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
+}
+
+.div-tablero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.div-tablero img {
+  width: 300px;
   height: 300px;
   object-fit: fill;
   border-radius: 15px;
@@ -210,50 +218,62 @@ section li {
   color: rgba(245, 245, 220, 0.644);
 }
 
-.jaque {
+.jaques {
+  margin-top: 3rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 3rem;
 }
-.jaque div {
-  width: 50%;
-}
-
-.divj2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-}
-.divj2 img {
-  width: 40%;
-  height: 300px;
+.jaques img {
+  width: 30%;
+  height: auto;
   object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
+  margin: 2rem 0;
 }
 
-.enroqueimg, .passantimg {
+.enroque,
+.passant {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
-
-.coronacion {
-  justify-content: space-evenly;
-}
-.coronacion img {
-  width: 40%;
+.enroque img,
+.passant img {
+  width: 30%;
   height: auto;
   object-fit: fill;
   border-radius: 15px;
   border: 3px solid #5C4033;
 }
 
-.casillas-tablero {
+.coronacion {
   display: flex;
   justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.coronacion img {
+  width: 30%;
+  height: auto;
+  object-fit: fill;
+  border-radius: 15px;
+  border: 3px solid #5C4033;
+}
+
+.div-notación-algebraica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  gap: 1rem;
+}
+
+.casillas-tablero {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .casillas-tablero img {
@@ -338,23 +358,32 @@ pre {
   p {
     font-size: 0.95rem;
   }
+  .jaques img, .enroque img, .passant img, .coronacion img {
+    width: 70%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 15px;
+    border: 3px solid #5C4033;
+  }
   /* SECCIONES CON FLEX-ROW */
   .seccion2i,
-  .seccion2p,
-  .jaque,
-  .divj2 {
+  .seccion2p {
+    flex-direction: column;
+    text-align: center;
+  }
+  .div-notación-algebraica {
     flex-direction: column;
     text-align: center;
   }
   .seccion2i img,
-  .seccion2p img,
-  .divj2 img {
+  .seccion2p img {
     width: 80%;
     height: auto;
     margin: auto;
   }
-  .jaque div {
-    width: 100%;
+  .div-tablero {
+    flex-direction: column;
+    text-align: center;
   }
   /* NOTACIÓN / HISTORIA */
   .casillas-tablero img,
@@ -367,7 +396,7 @@ pre {
   }
 }
 /* 📱📲 Celulares grandes y tablets verticales (≤ 768px) */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
   .header img {
     width: 70%;
     height: 300px;
@@ -380,13 +409,33 @@ pre {
   }
   .seccion2i,
   .seccion2p,
-  .jaque,
-  .divj2 {
+  .jaque {
     gap: 1.5rem;
   }
+  .div-tablero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .div-notación-algebraica {
+    flex-direction: column;
+    text-align: center;
+  }
+  .div-notación-algebraica img {
+    width: 40%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 15px;
+    border: 3px solid #5C4033;
+  }
+  .jaques img, .enroque img, .passant img, .coronacion img {
+    width: 50%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 15px;
+    border: 3px solid #5C4033;
+  }
   .seccion2i img,
-  .seccion2p img,
-  .divj2 img {
+  .seccion2p img {
     width: 60%;
     height: auto;
   }
@@ -395,17 +444,27 @@ pre {
   }
 }
 /* 💻 Tablets horizontales (≤ 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
   main {
     width: 85%;
+  }
+  .div-notación-algebraica {
+    flex-direction: column;
+    text-align: center;
+  }
+  .div-notación-algebraica img {
+    width: 40%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 15px;
+    border: 3px solid #5C4033;
   }
   .header img {
     width: 60%;
     height: 350px;
   }
   .seccion2i img,
-  .seccion2p img,
-  .divj2 img {
+  .seccion2p img {
     width: 45%;
   }
 }

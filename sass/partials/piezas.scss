@@ -1,14 +1,19 @@
 @use "./variables.scss" as*;
 @use "./mixins.scss" as*;
 .seccion2p{
-    @include flex-row;
     p {
         flex: 1;
     }
     img {
        @include img-style(40%, 300px);
     }
-}        
+}  
+.div-tablero{
+    @include flex-row;
+    img{
+        @include img-style(300px, 300px);
+    }
+}      
 .col-12{
     margin-top: 6px;
     margin-bottom: 6px;

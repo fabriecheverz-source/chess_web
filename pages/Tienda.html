@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | Ajedrez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/carrito.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-header">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="reglas.html">Reglas</a></li>
+                <li><a href="piezas.html">Piezas</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="notacion.html">Notación</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Tienda de Ajedrez</h1>
+            <p>
+                Encontrá tableros, piezas, relojes y accesorios para
+                disfrutar del ajedrez.
+            </p>
+        </section>
+        <section class="tienda">
+            <div class="productos">
+                <div
+                    class="container row"
+                    id="contenedorProductos">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+            <aside class="carrito">
+                <h2>Carrito</h2>
+                <div id="productosCarrito">
+                    <p>El carrito está vacío.</p>
+                </div>
+                <h3 id="totalCompra">
+                    Total: $0
+                </h3>
+                <button id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button id="finalizarCompra">
+                    Finalizar compra
+                </button>
+            </aside>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">
+            © 2026 Fabrizio Echeverz. Todos los derechos reservados.
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

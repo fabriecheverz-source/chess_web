@@ -468,5 +468,29 @@ pre {
     width: 45%;
   }
 }
+.tienda{
 
+    display:flex;
+
+    gap:30px;
+
+}
+
+.productos{
+
+    flex:3;
+
+}
+
+.carrito{
+
+    flex:1;
+
+}
+h5{
+    color: #D2B48C;
+}
+.cantidad{
+    color: #D2B48C;
+}
 /*# sourceMappingURL=style.css.map */

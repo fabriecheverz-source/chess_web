@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "nombre":"Tablero de madera",
+        "precio":45000,
+        "stock":3,
+        "imagen":"../img/tablero-de-madera.jpg"
+    },
+    {
+        "id":2,
+        "nombre":"Juego de piezas",
+        "precio":18000,
+        "stock":10,
+        "imagen":"../img/juego-de-piezas.jpg"
+    },
+    {
+        "id":3,
+        "nombre":"Reloj digital",
+        "precio":30000,
+        "stock":5,
+        "imagen":"../img/reloj-digital.jpg"
+    }
+]
